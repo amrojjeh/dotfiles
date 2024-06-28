@@ -1,0 +1,33 @@
+[[language]]
+name = "go"
+auto-format = true
+formatter = {command = "goimports" }
+
+[[language]]
+name = "html"
+auto-format = false
+file-types = ["html", "tmpl"]
+
+[[language]]
+name = "css"
+auto-format = false
+file-types = ["css", "scss"]
+
+[[language]]
+name = "javascript"
+auto-format = true
+
+[[language]]
+name = "haskell"
+auto-format = true
+
+[language-server.haskell-language-server]
+formattingProvider = "formolu"
+
+[[language]]
+name = "json"
+auto-format = false
+
+[[language]]
+name = "elixir"
+auto-format = true

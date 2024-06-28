@@ -1,0 +1,46 @@
+theme = "mytheme"
+
+[editor]
+line-number = "relative"
+mouse = false
+cursorline = true
+rulers = [120]
+text-width = 120
+color-modes = true
+soft-wrap.enable = true
+
+[editor.statusline]
+left = ["mode", "version-control", "spacer", "spacer", "diagnostics"]
+center = ["file-modification-indicator", "file-name"]
+right = ["file-line-ending", "selections", "primary-selection-length", "position"]
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+max-depth = 10
+
+[editor.whitespace.render]
+newline = "all"
+
+[keys.insert]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
+
+[keys.normal]
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up",
+      "paste_before"]
+C-j = ["extend_to_line_bounds", "delete_selection", "move_line_down",
+      "paste_before"]
