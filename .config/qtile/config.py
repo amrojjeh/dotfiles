@@ -18,8 +18,7 @@ black = "#000000"
 
 @hook.subscribe.startup_once
 def autostart():
-    home = os.path.expanduser('~/.config/qtile/autostart.sh')
-    run([home])
+    run([os.path.expanduser("~/.config/qtile/autostart.sh")])
 
 
 def dmenu_groups(groups):
@@ -186,8 +185,8 @@ mouse = [
     Click([mod], "Button2", lazy.window.bring_to_front()),
 ]
 
-follow_mouse_focus = True
-bring_front_click = False
+follow_mouse_focus = False
+bring_front_click = "floating_only"
 floats_kept_above = True
 cursor_warp = False
 floating_layout = layout.Floating(

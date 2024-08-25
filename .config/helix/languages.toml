@@ -31,3 +31,8 @@ auto-format = false
 [[language]]
 name = "elixir"
 auto-format = true
+
+[[language]]
+name = "python"
+auto-format = false
+language-servers = []

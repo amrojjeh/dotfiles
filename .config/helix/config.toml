@@ -8,6 +8,7 @@ rulers = [120]
 text-width = 120
 color-modes = true
 soft-wrap.enable = true
+auto-completion = false
 
 [editor.statusline]
 left = ["mode", "version-control", "spacer", "spacer", "diagnostics"]
